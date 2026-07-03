@@ -1,0 +1,47 @@
+body{
+    background-color:#ffedd5;
+    font-family:Arial, sans-serif;
+}
+
+h2{
+    text-align:center;
+    color:#c2410c;
+}
+
+form{
+    width:450px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border:2px solid #f97316;
+    border-radius:10px;
+}
+
+label{
+    color:#ea580c;
+    font-weight:bold;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:8px;
+    border:1px solid #fdba74;
+    border-radius:5px;
+    background:#fff7ed;
+}
+
+input[type="radio"]{
+    width:auto;
+}
+
+input[type="submit"]{
+    background:#f97316;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:5px;
+}
+
+input[type="submit"]:hover{
+    background:#ea580c;
+}
