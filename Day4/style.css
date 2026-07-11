@@ -1,0 +1,587 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#090909;
+    color:white;
+    overflow-x:hidden;
+    line-height:1.6;
+}
+
+section{
+    padding:90px 10%;
+}
+
+h1,h2,h3{
+    font-weight:700;
+}
+
+h2{
+    text-align:center;
+    font-size:2.6rem;
+    color:#D4AF37;
+    margin-bottom:40px;
+}
+
+/* ===========================
+   CONFETTI
+=========================== */
+
+#confetti{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    pointer-events:none;
+    z-index:999;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 10%;
+    background:rgba(0,0,0,.75);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    font-size:2rem;
+    color:#D4AF37;
+    font-weight:800;
+    letter-spacing:3px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#D4AF37;
+}
+
+.nav-btn{
+    text-decoration:none;
+    color:black;
+    background:#D4AF37;
+    padding:12px 24px;
+    border-radius:30px;
+    font-weight:600;
+    transition:.4s;
+}
+
+.nav-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 18px #D4AF37;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    radial-gradient(circle at top,#3d2b07,#090909 60%);
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h3{
+    color:#D4AF37;
+    font-size:1.4rem;
+    letter-spacing:2px;
+}
+
+.hero h1{
+    font-size:6rem;
+    margin:15px 0;
+    color:white;
+}
+
+.hero p{
+    font-size:1.1rem;
+    color:#ddd;
+    margin:20px auto;
+    max-width:700px;
+}
+
+.hero-info{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin:35px 0;
+}
+
+.hero-info div{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    padding:15px 25px;
+    border-radius:15px;
+}
+
+.hero-info i{
+    color:#D4AF37;
+    margin-right:8px;
+}
+
+/* ===========================
+   COUNTDOWN
+=========================== */
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin:40px 0;
+}
+
+.time-box{
+    width:120px;
+    height:120px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    transition:.4s;
+}
+
+.time-box:hover{
+    transform:translateY(-8px);
+    border-color:#D4AF37;
+}
+
+.time-box span{
+    font-size:2.5rem;
+    color:#D4AF37;
+    font-weight:bold;
+}
+
+.time-box p{
+    margin-top:8px;
+    color:white;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:40px;
+    transition:.4s;
+    font-weight:600;
+}
+
+.gold-btn{
+    background:#D4AF37;
+    color:black;
+}
+
+.gold-btn:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 20px #D4AF37;
+}
+
+.outline-btn{
+    border:2px solid #D4AF37;
+    color:#D4AF37;
+}
+
+.outline-btn:hover{
+    background:#D4AF37;
+    color:black;
+}
+
+/* ===========================
+   GLASS CARD
+=========================== */
+
+.box,
+.event-card,
+.timeline-item,
+.contact-grid div{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    transition:.4s;
+}
+
+.box:hover,
+.event-card:hover,
+.timeline-item:hover,
+.contact-grid div:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#D4AF37;
+
+    box-shadow:0 0 20px rgba(212,175,55,.25);
+
+}
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+    text-align:center;
+}
+
+.about p{
+    max-width:850px;
+    margin:0 auto 50px;
+    color:#d8d8d8;
+    font-size:1.05rem;
+}
+
+.about-boxes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.box{
+    padding:40px 25px;
+}
+
+.box i{
+    font-size:3rem;
+    color:#D4AF37;
+    margin-bottom:20px;
+}
+
+.box h3{
+    margin-bottom:12px;
+}
+
+/* ===========================
+   EVENTS
+=========================== */
+
+.event-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.event-card{
+    text-align:center;
+    padding:40px 25px;
+}
+
+.event-card i{
+    font-size:3rem;
+    color:#D4AF37;
+    margin-bottom:20px;
+}
+
+.event-card h3{
+    margin-bottom:15px;
+}
+
+.event-card p{
+    color:#ddd;
+}
+
+/* ===========================
+   SCHEDULE
+=========================== */
+
+.timeline{
+    max-width:850px;
+    margin:auto;
+}
+
+.timeline-item{
+    padding:25px;
+    margin:25px 0;
+    border-left:5px solid #D4AF37;
+}
+
+.timeline-item span{
+    color:#D4AF37;
+    font-weight:600;
+    display:block;
+    margin-bottom:10px;
+}
+
+/* ===========================
+   REGISTRATION
+=========================== */
+
+.registration{
+    text-align:center;
+}
+
+.registration p{
+    margin-bottom:35px;
+    color:#ddd;
+    font-size:1.1rem;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.contact-grid div{
+    text-align:center;
+    padding:35px;
+}
+
+.contact-grid i{
+    font-size:2.7rem;
+    color:#D4AF37;
+    margin-bottom:15px;
+}
+
+.contact-grid h3{
+    margin-bottom:12px;
+}
+
+.contact-grid p{
+    color:#ddd;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    padding:25px;
+    text-align:center;
+    background:#050505;
+    color:#aaa;
+}
+
+/* ===========================
+   SCROLL TO TOP
+=========================== */
+
+#topBtn{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:#D4AF37;
+
+    color:black;
+
+    font-size:20px;
+
+    display:none;
+
+    transition:.3s;
+
+    z-index:999;
+}
+
+#topBtn:hover{
+    transform:scale(1.1);
+}
+
+/* ===========================
+   FADE ANIMATION
+=========================== */
+
+.fade{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:1s;
+}
+
+.fade.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+nav{
+
+    flex-direction:column;
+
+    gap:18px;
+
+    padding:20px;
+}
+
+.nav-links{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:18px;
+}
+
+.hero h1{
+
+    font-size:4rem;
+}
+
+.hero-info{
+
+    flex-direction:column;
+}
+
+.countdown{
+
+    gap:15px;
+}
+
+.time-box{
+
+    width:95px;
+
+    height:95px;
+}
+
+.time-box span{
+
+    font-size:2rem;
+}
+
+.buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+.btn{
+
+    width:220px;
+
+    text-align:center;
+}
+
+section{
+
+    padding:80px 7%;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero h1{
+
+    font-size:3rem;
+}
+
+.hero p{
+
+    font-size:.95rem;
+}
+
+.logo{
+
+    font-size:1.6rem;
+}
+
+h2{
+
+    font-size:2rem;
+}
+
+.time-box{
+
+    width:80px;
+
+    height:80px;
+}
+
+.time-box span{
+
+    font-size:1.5rem;
+}
+
+}

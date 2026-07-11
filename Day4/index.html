@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pravah | College Fest 2026</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Confetti -->
+    <canvas id="confetti"></canvas>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+        <div class="logo">PRAVAH</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#registration" class="nav-btn">Register</a>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content fade">
+
+            <h3>Annual College Fest 2026</h3>
+
+            <h1>PRAVAH</h1>
+
+            <p>
+                Celebrate innovation, creativity, talent and unforgettable
+                experiences with students from colleges across the region.
+            </p>
+
+            <div class="hero-info">
+
+                <div>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    10 July 2026
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-clock"></i>
+                    9:00 AM
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Gyan Mandir Auditorium
+                </div>
+
+            </div>
+
+            <!-- Countdown -->
+
+            <div class="countdown">
+
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <p>Days</p>
+                </div>
+
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <p>Hours</p>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <p>Minutes</p>
+                </div>
+
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <p>Seconds</p>
+                </div>
+
+            </div>
+
+            <div class="buttons">
+                <a href="#registration" class="btn gold-btn">
+                    Register Now
+                </a>
+
+                <a href="#about" class="btn outline-btn">
+                    Explore
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about fade" id="about">
+
+        <h2>About Pravah</h2>
+
+        <p>
+
+            Pravah is an annual college fest that brings together students from
+            different colleges to celebrate culture, innovation, creativity,
+            technology and teamwork. Experience exciting competitions,
+            inspiring performances and unforgettable memories.
+
+        </p>
+
+        <div class="about-boxes">
+
+            <div class="box">
+                <i class="fa-solid fa-users"></i>
+                <h3>1000+ Participants</h3>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-medal"></i>
+                <h3>Exciting Competitions</h3>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-music"></i>
+                <h3>Cultural Events</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= EVENTS ================= -->
+
+    <section class="events fade" id="events">
+
+        <h2>Featured Events</h2>
+
+        <div class="event-grid">
+
+            <div class="event-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Hackathon</h3>
+                <p>Showcase your coding skills.</p>
+            </div>
+
+            <div class="event-card">
+                <i class="fa-solid fa-microphone"></i>
+                <h3>Open Mic</h3>
+                <p>Music, poetry and stand-up.</p>
+            </div>
+
+            <div class="event-card">
+                <i class="fa-solid fa-chess"></i>
+                <h3>Chess</h3>
+                <p>Battle the best minds.</p>
+            </div>
+
+            <div class="event-card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Innovation Expo</h3>
+                <p>Present your ideas.</p>
+            </div>
+
+            <div class="event-card">
+                <i class="fa-solid fa-gamepad"></i>
+                <h3>Gaming</h3>
+                <p>Compete with top gamers.</p>
+            </div>
+
+            <div class="event-card">
+                <i class="fa-solid fa-trophy"></i>
+                <h3>Quiz</h3>
+                <p>Test your knowledge.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SCHEDULE ================= -->
+
+    <section class="schedule fade" id="schedule">
+
+        <h2>Event Schedule</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <span>09:00 AM</span>
+                <h3>Opening Ceremony</h3>
+            </div>
+
+            <div class="timeline-item">
+                <span>10:00 AM</span>
+                <h3>Competitions Begin</h3>
+            </div>
+
+            <div class="timeline-item">
+                <span>01:00 PM</span>
+                <h3>Lunch Break</h3>
+            </div>
+
+            <div class="timeline-item">
+                <span>02:00 PM</span>
+                <h3>Cultural Performances</h3>
+            </div>
+
+            <div class="timeline-item">
+                <span>05:00 PM</span>
+                <h3>Prize Distribution</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= REGISTRATION ================= -->
+
+    <section class="registration fade" id="registration">
+
+        <h2>Register Today</h2>
+
+        <p>
+            Join Pravah and be a part of an unforgettable celebration.
+        </p>
+
+        <a href="#" class="btn gold-btn">
+            Register Now
+        </a>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact fade" id="contact">
+
+        <h2>Contact</h2>
+
+        <div class="contact-grid">
+
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Venue</h3>
+                <p>Gyan Mandir Auditorium</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+91 XXXXX XXXXX</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+                <p>info@pravah.com</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Pravah | All Rights Reserved
+        </p>
+
+    </footer>
+
+    <!-- Scroll Button -->
+
+    <button id="topBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
